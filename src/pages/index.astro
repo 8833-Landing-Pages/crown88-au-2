@@ -1,0 +1,14 @@
+---
+import LandingLayout from '../layouts/LandingLayout.astro';
+import Hero from '../components/Hero.astro';
+import MainContent from '../components/MainContent.astro';
+
+const title = "Crown88 AU – Trusted Crypto Casino for Australians";
+const promoText = "Register and get 30 AUD Free Credits (1x Turnover)";
+const regionName = "Australia";
+---
+
+<LandingLayout title={title}>
+    <Hero promoText={promoText} regionName={regionName} />
+    <MainContent />
+</LandingLayout>

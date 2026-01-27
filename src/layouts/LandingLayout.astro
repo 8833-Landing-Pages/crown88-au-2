@@ -45,6 +45,9 @@ const { title, description = "Join Crown88, Singapore’s top casino for live ga
         text-align: center;
         border-bottom: 1px solid #333;
       }
+      .hero-section .text-start.mb-4 {
+        margin-bottom: 40px !important;
+      }
 
       .promo-badge {
         background: linear-gradient(180deg, #eac071 0.41%, #ffeaa4 39.66%, #e7cd79 75.14%, #dbbf6b 100.41%), #fff;
@@ -97,7 +100,49 @@ const { title, description = "Join Crown88, Singapore’s top casino for live ga
         box-shadow: 0 10px 25px rgba(234, 192, 113, 0.4);
         color: #0c0b06;
       }
+
+      @media only screen and (max-width: 767px) {
+        .hero-section {
+          padding-bottom: 0;
+        }
+        .hero-section .text-start.mb-4 {
+          margin-bottom: 28px !important;
+        }
+        .promo-badge {
+          font-size: 0.95rem;
+          padding: 10px 18px;
+          margin-bottom: 18px;
+        }
+        .hero-title {
+          font-size: 2.1rem;
+          margin-bottom: 14px;
+        }
+        .hero-section .lead {
+          font-size: 1.05rem !important;
+        }
+        .register-btn {
+          font-size: 1.05rem;
+          padding: 12px 28px;
+        }
+      }
     </style>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2888853831301325');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2888853831301325&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
     <slot />

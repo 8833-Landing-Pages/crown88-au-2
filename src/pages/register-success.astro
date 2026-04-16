@@ -14,7 +14,9 @@ const redirectUrl = 'https://c88games.com/register?couponCode=FBAUD1';
     </div>
   </main>
   <script is:inline>
-    const redirectUrl = 'https://c88games.com/register?couponCode=FBYOSHISG';
+    const params = new URLSearchParams(window.location.search);
+    const couponCode = params.get('cpn');
+    const redirectUrl = 'https://c88games.com/register?couponCode=${couponCode}';
     setTimeout(() => {
       window.location.href = redirectUrl;
     }, 2000);
